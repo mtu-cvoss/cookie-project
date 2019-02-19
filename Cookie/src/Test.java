@@ -8,6 +8,8 @@ public class Test {
 		System.out.println("Calvin very smelly");
 		
 		System.out.println("Help");
+		
+		System.out.println("Help me");
 
 	}
 
