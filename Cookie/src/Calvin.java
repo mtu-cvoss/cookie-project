@@ -9,5 +9,10 @@ public class Calvin {
 	{
 		return smell;
 	}
+	
+	public int getCoolnessLevel()
+	{
+		return smell * twitch - nerdLevel;
+	}
 
 }
