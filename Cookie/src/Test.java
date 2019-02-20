@@ -11,7 +11,7 @@ public class Test {
 		
 		System.out.println("Help me");
 		
-		System.out.println("Uh fhghettio");
+		System.out.println("Uh fhghetio");
 
 	}
 
