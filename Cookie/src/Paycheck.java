@@ -1,25 +1,28 @@
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
+import java.sql.Date;
 
-public class Paycheck {
+public class Paycheck extends InFlow{
 	
-	private double net;
 	private double socSecDeduct;
 	private double medicareDeduct;
 	private double stateInTax;
 	private double fedInTax;
 	
-	public Paycheck( double netEntry, double socSecDeductEntry, double medicareDeductEntry, double stateInTaxEntry, double fedInTaxEntry ) {
-		net = netEntry;
+	public Paycheck( Date dateEntry, double amountEntry ) {
+		super(dateEntry, amountEntry);
+	}
+	public Paycheck( Date dateEntry, double amountEntry, double socSecDeductEntry, double medicareDeductEntry, double stateInTaxEntry ) {
+		super(dateEntry, amountEntry);
 		socSecDeduct = socSecDeductEntry;
 		medicareDeduct = medicareDeductEntry;
 		stateInTax = stateInTaxEntry;
-		fedInTax = fedInTaxEntry;
+		
 	}
 	
-	public void setNet( double netEntry ) {
-		net = netEntry;
+	public void setAmount( double amountEntry ) {
+		super.setAmount(amountEntry);
 	}
 	
 	public void setSocialSecurityDeduction( double socSecDeductEntry ) {
@@ -38,8 +41,8 @@ public class Paycheck {
 		fedInTax = fedInTaxEntry;
 	}
 	
-	public double getNet() {
-		return net;
+	public double getAmount() {
+		return super.getAmount();
 	}
 	
 	public double getSocialSecurityDeduction() {
