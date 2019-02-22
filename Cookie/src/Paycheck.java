@@ -61,10 +61,10 @@ public class Paycheck {
 	public boolean upload( String user, String password ) {
 		dbConnect conn = new dbConnect();
 		PreparedStatement smnt = null;
-		String test = "INSERT INTO jmperttu.accountNAME (date, amount, type, whom, balance, subtype) VALUES (?,?,?,?,?,?)";
+		String test1 = "INSERT INTO jmperttu.accountNAME (date, amount, type, whom, balance, subtype) VALUES (?,?,?,?,?,?)";
 		try {
 			Connection c = conn.connect( user, password );
-			smnt = c.prepareStatement( test );
+			smnt = c.prepareStatement( test1 );
 			smnt.executeQuery();
 		} catch (SQLException e) {
 			e.printStackTrace();
