@@ -1,3 +1,6 @@
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
 
 public class Paycheck {
 	
@@ -53,5 +56,19 @@ public class Paycheck {
 	
 	public double getFederalIncomeTax() {
 		return fedInTax;
+	}
+	
+	public boolean upload( String user, String password ) {
+		dbConnect conn = new dbConnect();
+		PreparedStatement smnt = null;
+		String test1 = "INSERT INTO jmperttu.accountNAME (date, amount, type, whom, balance, subtype) VALUES (?,?,?,?,?,?)";
+		try {
+			Connection c = conn.connect( user, password );
+			smnt = c.prepareStatement( test1 );
+			smnt.executeQuery();
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+		return false;
 	}
 }
