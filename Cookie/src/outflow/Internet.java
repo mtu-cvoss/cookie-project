@@ -1,9 +1,10 @@
 package outflow;
+
 import java.sql.Date;
 
-public class CostOfLiving extends OutFlow{
+public class Internet extends Bill {
 
-	public CostOfLiving( Date dateEntry, double amountEntry){
+	public Internet ( Date dateEntry, double amountEntry){
 		super( dateEntry, amountEntry );
 	}
 	
