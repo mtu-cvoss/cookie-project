@@ -1,3 +1,4 @@
+package outflow;
 import java.sql.Date;
 
 public class Saving extends OutFlow{

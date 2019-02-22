@@ -1,6 +1,7 @@
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.SQLException;
+package inflow;
+//import java.sql.Connection;
+//import java.sql.PreparedStatement;
+//import java.sql.SQLException;
 import java.sql.Date;
 
 public class Paycheck extends InFlow{
@@ -61,17 +62,17 @@ public class Paycheck extends InFlow{
 		return fedInTax;
 	}
 	
-	public boolean upload( String user, String password ) {
-		dbConnect conn = new dbConnect();
-		PreparedStatement smnt = null;
-		String test1 = "INSERT INTO jmperttu.accountNAME (date, amount, type, whom, balance, subtype) VALUES (?,?,?,?,?,?)";
-		try {
-			Connection c = conn.connect( user, password );
-			smnt = c.prepareStatement( test1 );
-			smnt.executeQuery();
-		} catch (SQLException e) {
-			e.printStackTrace();
-		}
-		return false;
-	}
+//	public boolean upload( String user, String password ) {
+//		dbConnect conn = new dbConnect();
+//		PreparedStatement smnt = null;
+//		String test1 = "INSERT INTO jmperttu.accountNAME (date, amount, type, whom, balance, subtype) VALUES (?,?,?,?,?,?)";
+//		try {
+//			Connection c = conn.connect( user, password );
+//			smnt = c.prepareStatement( test1 );
+//			smnt.executeQuery();
+//		} catch (SQLException e) {
+//			e.printStackTrace();
+//		}
+//		return false;
+//	}
 }

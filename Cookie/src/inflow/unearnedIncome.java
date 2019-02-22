@@ -1,3 +1,4 @@
+package inflow;
 import java.sql.Date;
 
 public class unearnedIncome extends InFlow{
