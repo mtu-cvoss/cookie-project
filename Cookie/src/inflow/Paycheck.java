@@ -4,7 +4,7 @@ package inflow;
 //import java.sql.SQLException;
 import java.sql.Date;
 
-public class Paycheck extends InFlow{
+public class Paycheck extends Inflow{
 	
 	private double socSecDeduct;
 	private double medicareDeduct;

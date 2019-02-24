@@ -2,12 +2,12 @@ package inflow;
 import java.util.*;
 import java.sql.Date;
 
-public class InFlow {
+public class Inflow {
 	
 	private Date date;
 	private double amount;
 	
-	public InFlow(Date dateEntry, double amountEntry ) {
+	public Inflow(Date dateEntry, double amountEntry ) {
 		date = dateEntry;
 		amount = amountEntry;
 	}

@@ -1,4 +1,4 @@
-package controls;
+package backend;
 import javafx.event.ActionEvent;
 import javafx.scene.chart.PieChart;
 import javafx.collections.FXCollections;
@@ -11,7 +11,7 @@ public class GetData {
 	
 	private PieChart inFlow;
 	
-	public PieChart getPieChart(InFlow in) {
+	public PieChart getPieChart(Inflow in) {
 		
 		return inFlow;
 		
