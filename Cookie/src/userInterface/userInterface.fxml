@@ -1,19 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import java.lang.*?>
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.control.*?>
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.*?>
 <?import javafx.scene.layout.ColumnConstraints?>
 <?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.layout.RowConstraints?>
 
-<GridPane alignment="center" hgap="10" prefHeight="600.0" prefWidth="1000.0" vgap="10" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="userInterface.Controller">
-   <columnConstraints>
-      <ColumnConstraints />
-      <ColumnConstraints />
-   </columnConstraints>
-   <rowConstraints>
-      <RowConstraints />
-   </rowConstraints>
-   <children>
-      <Button fx:id="btn_msg" mnemonicParsing="false" onAction="#pressButton" prefHeight="116.0" prefWidth="206.0" text="Button" GridPane.columnIndex="1" />
-   </children>
+<GridPane alignment="CENTER" hgap="10.0" prefHeight="421.0" prefWidth="700.0" vgap="10.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="userInterface.Controller">
+  <children>
+    <AnchorPane prefHeight="400.0" prefWidth="660.0" styleClass="Style" GridPane.columnIndex="0" GridPane.rowIndex="0">
+      <children>
+        <Button fx:id="butn_pie" layoutX="38.0" layoutY="26.0" mnemonicParsing="false" onAction="#pressButton" prefHeight="76.0" prefWidth="149.0" text="Button" />
+        <PieChart id="PieChart" fx:id="pieChart" layoutX="234.0" layoutY="43.0" prefHeight="315.0" prefWidth="371.0" />
+      </children>
+    </AnchorPane>
+  </children>
+  <columnConstraints>
+    <ColumnConstraints />
+    <ColumnConstraints />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints />
+  </rowConstraints>
 </GridPane>
