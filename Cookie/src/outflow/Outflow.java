@@ -1,12 +1,12 @@
 package outflow;
 import java.sql.Date;
 
-public class OutFlow {
+public class Outflow {
 	
 	private Date date;
 	private double amount;
 	
-	public OutFlow(Date dateEntry, double amountEntry ) {
+	public Outflow(Date dateEntry, double amountEntry ) {
 		date = dateEntry;
 		amount = amountEntry;
 	}

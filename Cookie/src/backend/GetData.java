@@ -5,11 +5,17 @@ import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.scene.chart.PieChart.Data;
+import outflow.Bill;
+import outflow.CostOfLiving;
+import outflow.Luxery;
+import outflow.Outflow;
+import outflow.Saving;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.ArrayList;
 
 import inflow.*;
 
@@ -26,11 +32,43 @@ public class GetData {
 		}
 	}
 	
-	public void getBillsData() throws SQLException {
-		String billsID = "SELECT id FROM Bills WHERE Bills.id = id";
+	public ArrayList<Outflow> getOutflow() {
+		return null;
+	}
+	
+	public ArrayList<Inflow> getInflow() {
+		return null;
+	}
+	
+	private ArrayList<Bill> getBill() throws SQLException {
+		String billsID = "SELECT * FROM Bills WHERE Bills.id = id;";
 		PreparedStatement stmnt = conn.prepareStatement( billsID );
 		ResultSet rs = stmnt.executeQuery();
-		System.out.println( rs );
+		return null;
+		
+	}
+	
+	private ArrayList<CostOfLiving> getCostOfLiving() throws SQLException {
+		return null;
 	}
 
+	private ArrayList<Saving> getSaving() throws SQLException {
+		return null;
+	}
+	
+	private ArrayList<Luxery> getLuxery() throws SQLException {
+		return null;
+	}
+	
+	private ArrayList<Paycheck> getPaycheck() {
+		return null;
+	}
+	
+	private ArrayList<OtherIncome> getOtherIncome() {
+		return null;
+	}
+	
+	private ArrayList<UnearnedIncome> getUnearnedIncome() {
+		return null;
+	}
 }
