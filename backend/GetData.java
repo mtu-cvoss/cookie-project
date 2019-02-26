@@ -32,7 +32,8 @@ public class GetData {
 		}
 	}
 	
-	public ArrayList<Outflow> getOutflow() {
+	public ArrayList<Outflow> getOutflow() throws SQLException {
+		conn.close();
 		return null;
 	}
 	
