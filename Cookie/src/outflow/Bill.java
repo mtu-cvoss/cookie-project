@@ -1,7 +1,7 @@
 package outflow;
 import java.sql.Date;
 
-public class Bill extends OutFlow{
+public class Bill extends Outflow{
 
 	
 	public Bill ( Date dateEntry, double amountEntry){

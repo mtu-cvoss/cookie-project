@@ -1,7 +1,7 @@
 package outflow;
 import java.sql.Date;
 
-public class Luxery extends OutFlow {
+public class Luxery extends Outflow {
 
 	public Luxery ( Date dateEntry, double amountEntry){
 		super( dateEntry, amountEntry );

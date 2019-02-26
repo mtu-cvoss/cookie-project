@@ -1,7 +1,7 @@
 package inflow;
 import java.sql.Date;
 
-public class OtherIncome extends InFlow {
+public class OtherIncome extends Inflow {
 
 	public OtherIncome( Date dateEntry, double amountEntry ) {
 		super(dateEntry, amountEntry);

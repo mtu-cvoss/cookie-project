@@ -1,7 +1,7 @@
 package outflow;
 import java.sql.Date;
 
-public class CostOfLiving extends OutFlow{
+public class CostOfLiving extends Outflow{
 
 	public CostOfLiving( Date dateEntry, double amountEntry){
 		super( dateEntry, amountEntry );
