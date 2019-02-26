@@ -9,7 +9,7 @@ import javafx.scene.chart.PieChart.Data;
 
 public class Controller {
 	
-	@FXML PieChart inflowPieChart;
+	@FXML PieChart outflowPieChart;
 
     public void pressButton(ActionEvent click){
         
@@ -19,7 +19,7 @@ public class Controller {
         		new PieChart.Data("Rent",70),
         		new PieChart.Data("Luxeries",20)
         		);
-        inflowPieChart.setData(list);
+        outflowPieChart.setData(list);
     }
 
 

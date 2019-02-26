@@ -10,7 +10,7 @@
 
 <AnchorPane id="AnchorPane" maxHeight="-1.0" maxWidth="-1.0" minHeight="-1.0" minWidth="-1.0" prefHeight="768.0000999999975" prefWidth="1025.0000999999975" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="userInterface.Controller">
   <children>
-    <MenuBar layoutX="0.0" layoutY="0.0">
+    <MenuBar AnchorPane.bottomAnchor="738.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="877.0" AnchorPane.topAnchor="0.0">
       <menus>
         <Menu mnemonicParsing="false" text="File">
           <items>
@@ -29,9 +29,9 @@
         </Menu>
       </menus>
     </MenuBar>
-    <AnchorPane layoutX="14.0" layoutY="30.0" prefHeight="340.0" prefWidth="504.0">
+    <AnchorPane prefHeight="340.0" prefWidth="504.0" snapToPixel="true" AnchorPane.bottomAnchor="398.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="507.0" AnchorPane.topAnchor="30.0">
       <children>
-        <TabPane layoutX="102.0" layoutY="7.0" prefHeight="333.0" prefWidth="402.0" tabClosingPolicy="UNAVAILABLE">
+        <TabPane prefHeight="333.0" prefWidth="402.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="102.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="7.0">
           <tabs>
             <Tab text="Account 1">
               <content>
@@ -55,20 +55,20 @@
             </Tab>
           </tabs>
         </TabPane>
-        <Button layoutX="7.0" layoutY="14.0" mnemonicParsing="false" prefHeight="23.999908447265625" prefWidth="79.0" text="+ Account" />
-        <Button id="" layoutX="7.0" layoutY="52.0" mnemonicParsing="false" onAction="#pressButton" prefWidth="79.0" text="+ Entry" textAlignment="CENTER" />
+        <Button mnemonicParsing="false" prefHeight="23.999908447265625" prefWidth="79.0" text="+ Account" AnchorPane.bottomAnchor="299.0" AnchorPane.leftAnchor="7.0" AnchorPane.rightAnchor="418.0" AnchorPane.topAnchor="14.0" />
+        <Button id="" mnemonicParsing="false" onAction="#pressButton" prefWidth="79.0" text="+ Entry" textAlignment="CENTER" AnchorPane.bottomAnchor="261.0" AnchorPane.leftAnchor="7.0" AnchorPane.rightAnchor="418.0" AnchorPane.topAnchor="52.0" />
       </children>
     </AnchorPane>
-    <Separator layoutX="515.0" layoutY="-1.0" orientation="VERTICAL" prefHeight="373.0" />
-    <Pane layoutX="528.0" layoutY="30.0" prefHeight="311.0" prefWidth="477.0">
+    <Separator orientation="VERTICAL" prefHeight="373.0" AnchorPane.bottomAnchor="396.0" AnchorPane.leftAnchor="515.0" AnchorPane.rightAnchor="506.0" AnchorPane.topAnchor="-1.0" />
+    <Pane prefHeight="311.0" prefWidth="477.0" AnchorPane.bottomAnchor="427.0" AnchorPane.leftAnchor="528.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="30.0">
       <children>
         <PieChart id="PieChart" fx:id="inflowPieChart" layoutX="21.0" layoutY="40.0" legendSide="RIGHT" legendVisible="false" minHeight="102.0" minWidth="103.0" prefHeight="185.0" prefWidth="185.0" title="Inflow" titleSide="BOTTOM" />
         <CheckBox layoutX="206.0" layoutY="40.0" mnemonicParsing="false" text="" />
-        <PieChart id="PieChart" layoutX="247.0" layoutY="40.0" legendSide="RIGHT" legendVisible="false" minHeight="102.0" minWidth="103.0" prefHeight="185.0" prefWidth="185.0" title="Outflow" titleSide="BOTTOM" />
+        <PieChart id="PieChart" fx:id="outflowPieChart" layoutX="247.0" layoutY="40.0" legendSide="RIGHT" legendVisible="false" minHeight="102.0" minWidth="103.0" prefHeight="185.0" prefWidth="185.0" title="Outflow" titleSide="BOTTOM" />
         <CheckBox layoutX="432.0" layoutY="40.0" mnemonicParsing="false" text="" />
       </children>
     </Pane>
-    <LineChart id="LineChart" layoutX="565.0" prefHeight="311.0" prefWidth="419.0" title="Spending History" AnchorPane.bottomAnchor="54.0" AnchorPane.topAnchor="403.0">
+    <LineChart id="LineChart" prefHeight="311.0" prefWidth="419.0" title="Spending History" AnchorPane.bottomAnchor="54.0" AnchorPane.leftAnchor="565.0" AnchorPane.rightAnchor="41.0" AnchorPane.topAnchor="403.0">
       <xAxis>
         <CategoryAxis animated="false" label="Time (months)" prefHeight="15.9609375" prefWidth="204.0" side="BOTTOM">
           <tickLabelFont>
@@ -84,8 +84,8 @@
         </NumberAxis>
       </yAxis>
     </LineChart>
-    <Separator layoutX="518.0" layoutY="370.0" orientation="VERTICAL" prefHeight="399.0" prefWidth="13.0" />
-    <Pane layoutX="27.0" layoutY="370.0" prefHeight="383.0" prefWidth="466.0">
+    <Separator orientation="VERTICAL" prefHeight="399.0" prefWidth="13.0" AnchorPane.bottomAnchor="-1.0" AnchorPane.leftAnchor="518.0" AnchorPane.rightAnchor="494.0" AnchorPane.topAnchor="370.0" />
+    <Pane prefHeight="383.0" prefWidth="466.0" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="27.0" AnchorPane.rightAnchor="532.0" AnchorPane.topAnchor="371.0">
       <children>
         <TableView editable="false" layoutX="0.0" layoutY="52.0" prefHeight="273.0" prefWidth="466.0000999999975">
           <columns>
