@@ -9,10 +9,9 @@ import javafx.scene.chart.PieChart.Data;
 
 public class Controller {
 	
-	@FXML PieChart pieChart;
+	@FXML PieChart inflowPieChart;
 
     public void pressButton(ActionEvent click){
-        System.out.println("Click");
         
         ObservableList<Data> list = FXCollections.observableArrayList(
         		new PieChart.Data("Food",50),
@@ -20,7 +19,7 @@ public class Controller {
         		new PieChart.Data("Rent",70),
         		new PieChart.Data("Luxeries",20)
         		);
-pieChart.setData(list);
+        inflowPieChart.setData(list);
     }
 
 
