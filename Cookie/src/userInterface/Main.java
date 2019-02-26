@@ -12,7 +12,7 @@ public class Main extends Application {
     public void start(Stage primaryStage) throws Exception{
         Parent root = FXMLLoader.load(getClass().getResource("userInterface.fxml"));
         primaryStage.setTitle("Example UI using scene builder");
-        primaryStage.setScene(new Scene(root, 600, 400));
+        primaryStage.setScene(new Scene(root, 1025.0000999999975, 768.0000999999975));
         primaryStage.show();
     }
 
